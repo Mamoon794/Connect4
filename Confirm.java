@@ -1,4 +1,3 @@
-package Connect4;
 
 import javafx.stage.Modality;
 import javafx.stage.Stage;
