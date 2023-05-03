@@ -220,11 +220,11 @@ public class Connect4Game extends Application implements EventHandler<ActionEven
 
         if(checkWin) {
             if(currentplayer.equals(playerName))
-                answer = ConfirmBox.display("Connect4", playername2 + " is the winner and " + playerName + " is the loser"
+                answer = Confirm.display("Connect4", playername2 + " is the winner and " + playerName + " is the loser"
                         + "\n\tDo you want to play again?");
 
             else
-                answer = ConfirmBox.display("Connect4", playerName + " is the winner and " + playername2 + " is the loser"
+                answer = Confirm.display("Connect4", playerName + " is the winner and " + playername2 + " is the loser"
                         + "\n\tDo you want to play again?");
 
             if(answer)
@@ -235,7 +235,7 @@ public class Connect4Game extends Application implements EventHandler<ActionEven
 
         checktie = checkTie();
         if(checktie && !checkWin) {
-            answer = ConfirmBox.display("Connect4", "There was a tie between " + playerName + " and " + playername2 +
+            answer = Confirm.display("Connect4", "There was a tie between " + playerName + " and " + playername2 +
                     ". No one won\n\tDo you want to play again?");
 
 
